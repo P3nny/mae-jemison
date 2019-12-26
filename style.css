@@ -1,0 +1,81 @@
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+    overflow: hidden;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+p {
+    font-size: 3rem;
+    margin: 3rem 5rem;
+
+}
+
+#gallery {
+  position: relative;
+}
+
+#gallery figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#gallery figure {
+    animation: wechseln 120s infinite;
+  }
+
+  @keyframes wechseln {
+    0% {opacity: 0;}
+   10% {opacity: 1;}
+   20% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+  #gallery figure:nth-of-type(2) {
+    animation-delay: 20s;
+    opacity: 0;
+  }
+
+  #gallery figure:nth-of-type(3) {
+    animation-delay: 40s;
+    opacity: 0;
+  }
+
+  #gallery figure:nth-of-type(4) {
+    animation-delay: 60s;
+    opacity: 0;
+  }
+
+  #gallery figure:nth-of-type(5) {
+    animation-delay: 80s;
+    opacity: 0;
+  }
+
+  #gallery figure:nth-of-type(6) {
+    animation-delay: 100s;
+    opacity: 0;
+  }
+
+img {
+    max-height: 100vh;
+    width: auto;
+    margin: 3rem 0;
+
+}
